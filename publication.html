@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Metoo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Le styles -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="assets/css/add.css" rel="stylesheet">
+<!-- <link href="assets/css/docs.css" rel="stylesheet"> -->
+<script src="assets/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+</head>
+<body >
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+          <div class="cover-container">
+            <div class="masthead clearfix">
+              <div class="inner">
+                <div class="masthead-brand"><img src="assets/img/Logodark.png" alt="Logo"></div>
+              <div>
+              <ul class="nav masthead-nav">
+                <li><a href="index.html">首页</a> </li>
+                <li ><a href="#">土地市场</a> </li>
+                <li class="active"><a href="#">发布土地</a> </li>
+                <li><a href="index.html">新闻资讯</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="index.html">name</a></li>
+              </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<form class="form-horizontal publish_form" method="post" action="#">
+					<div id="publish_form" class="panel panel-danger " >
+						<div class="panel-heading ">
+							<center><h4>发布土地</h4></center>
+			            </div>
+		            	<div class="panel-body">
+			                <div class="form-group">
+			                  	<label class="col-sm-4 control-label" for="uName" hidden>用户名：</label>
+			                  	<div class="col-sm-5">
+			                      <input class="form-control hidden" id="rName" name="uName" minlength="4" placeholder="username" value="name">
+			                    </div>
+			                </div>
+			                <div class="form-group">
+			                    <label class="col-sm-4 control-label hidden" for="tName">真实姓名：</label>
+			                    <div class="col-sm-5">
+			                      <input class="form-control hidden" id="tName" name="tName" minlength="3" placeholder="trueName" required/>
+			                    </div>
+			                </div>
+			                <div class="form-group">
+			                    <label class="col-sm-4 control-label " for="tName">标题：</label>
+			                    <div class="col-sm-5">
+			                      <input class="form-control " id="lTitle" name="lTitle" manlength="80" placeholder="80字以内" required/>
+			                    </div>
+			                </div>
+			                <div class="form-group">
+			                	<label class="col-sm-4 control-label" for="area" >地区:</label>
+			                	<div class="col-sm-6 ">
+				                	<input type="radio" name="areaChoice" id="pj" value="pj">蓬江区
+				                	<input type="radio" name="areaChoice" id="jh" value="jh">江海区
+				                	<input type="radio" name="areaChoice" id="ep" value="ep">恩平市
+				                	<input type="radio" name="areaChoice" id="xh" value="xh">新会市
+				                	<input type="radio" name="areaChoice" id="hs" value="hs">鹤山市
+				                	<input type="radio" name="areaChoice" id="kp" value="kp">开平市
+			                	</div>
+			                </div>
+			                <div class="form-group">
+			                	<label class="control-label col-sm-4" for="transType" type="radio" >流转类型：</label>
+			                	<div class="col-sm-3">
+				                	<select class="form-control ">
+					                	<label class="control-label" for="transType" type="radio" >
+					                		<option>转包</option>
+					                		<option>合作</option>
+					                		<option>转让</option>
+					                		<option>互换</option>
+					                		<option>租赁</option>
+					                		<option>求购</option>
+					                	</label>
+					                </select>
+					            </div>
+				            </div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label" for="money">
+									付款方式：
+								</label>
+								<div class="col-sm-2">
+									<select class="form-control" name="pay" id="pay">
+										<label for="payType" class="control-label"type="radio">
+											<option>面议</option>
+											<option>支付宝</option>
+											<option>银行转账</option>
+										</label>
+									</select>
+								</div>
+								<div class="col-sm-3">
+									<input type="text" class="form-control" placeholder="如：一次性付、年付、月付">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="desc" class="col-sm-4 control-label">详细说明</label>
+								<div class="col-sm-4" name="desc">
+									<textarea name="desc" id="desc" cols="45" rows="5"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div  class="panel panel-danger " >
+						<div class="panel-heading ">
+							<center><h4>面积与价格</h4></center>
+		            	</div>
+		            	<div class="panel-body">
+			                <div class="form-group">
+			                  	<label class="col-sm-4 control-label" for="uName" hidden>用户名：</label>
+			                  	<div class="col-sm-5">
+			                      <input class="form-control hidden" id="rName" name="uName" minlength="4" placeholder="username" value="name">
+			                    </div>
+			                </div>
+			                <div class="form-group">
+			                    <label class="col-sm-4 control-label" for="space">面积：</label>
+			                    <div class="col-sm-5 ">
+			                    	<div class="input-group">
+				                      <input class="form-control" id="space" type="number" name="space" maxlength="8" placeholder="如：1500(长度在8位数字内)" required/>
+				                      <div class="input-group-addon">亩</div>
+				                  	</div>
+			                    </div>
+			                </div>
+			                <div class="form-group">
+			                	<label class="col-sm-4 control-label" for="priceChoice" >价格类型:</label>
+			                	<div class="col-sm-6">
+				                	<input type="radio" name="priceChoice" id="pj" value="ymn">元/亩/年
+				                	<input type="radio" name="priceChoice" id="jh" value="ym">元/亩
+				                	<input type="radio" name="priceChoice" id="ep" value="oneprice">一口价
+			                	</div>
+			                </div>
+			                <div class="form-group">
+			                    <label class="col-sm-4 control-label" for="price">价格：</label>
+			                    <div class="col-sm-5 ">
+			                    	<div class="input-group">
+			                    	  <div class="input-group-addon">￥</div>
+				                      <input class="form-control" id="price" type="number" name="price" maxlength="15" placeholder="如：15(长度在15位数字内)" required/>
+				                      <div class="input-group-addon">元</div>
+				                  	</div>
+			                    </div>
+			                </div>
+							<div>
+								<label class="col-sm-6 control-label" ></label>
+								<a type="submit" class="btn btn-success">发布土地</a>
+							</div>
+						</div>
+					</div>
+				</form>	
+			</div>					
+		</div>	
+	</div>
+</body>
